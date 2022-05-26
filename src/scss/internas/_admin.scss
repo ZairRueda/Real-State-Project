@@ -1,0 +1,72 @@
+
+
+.bx-error-circle::before {    
+    font-size: 3rem;
+    color: $rojo;
+}
+
+.alerta {
+    position: relative;
+    color: $blanco;
+    display: flex;
+
+    .texto {
+        position: absolute;
+        left: 30px;
+        display: block;
+        text-align: center;
+        font-weight: $bold;
+        text-transform: uppercase;
+        padding: 0 .5rem;
+        background-color: $rojo;
+
+        &.error {
+            top: -2rem;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            background-color: $rojo;
+            width: 60rem;
+        }
+
+        &.exito {
+            top: -2rem;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            background-color: $verde;
+            width: 60rem;
+        }
+    }    
+}
+
+table.propiedades {
+    text-align: center;
+
+    margin-top: 4rem;
+    width: 100%;
+    border-spacing: 0;
+
+    thead {
+        background-color: $verde;
+
+        th {
+            color: $blanco;
+            padding: 2rem;
+        }
+    }
+    
+    td {
+        padding: 2rem;
+    }
+    
+
+    .imagen-tabla {
+        width: 10rem;
+        margin: 0 auto;
+    }
+}
+
+.imagen-small {
+    width: 20rem;
+}
